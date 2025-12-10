@@ -56,4 +56,12 @@ Archivo de configuración que define todas las dependencias necesarias para el p
 ### 2. Configuración del Ambiente Conda
 
 El archivo `environment.yml` contiene todas las dependencias necesarias. Para crear el ambiente:
+## Fuente de Datos
+
+Los prompts utilizados para entrenamiento y validación fueron obtenidos del dataset **DiffusionDB**, un conjunto de datos a gran escala de prompts e imágenes generadas por modelos de difusión. El dataset está disponible públicamente en Hugging Face:
+
+- **Dataset**: DiffusionDB
+- **URL**: https://huggingface.co/datasets/poloclub/diffusiondb/tree/main
+- **Contenido**: Millones de prompts utilizados para generar imágenes con modelos Stable Diffusion
+- **Licencia**: Creative Commons CC0 1.0
 
