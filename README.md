@@ -8,7 +8,6 @@ Este proyecto implementa un sistema de **Aprendizaje por Refuerzo (RL)** para op
 
 - **Entrenamiento RL con múltiples evaluadores**: Combina métricas de estética visual, alineación CLIP, PickScore y HPSv2
 - **Validación cruzada robusta**: Implementa k-fold cross validation para evaluación justa del modelo
-- **Búsqueda de hiperparámetros**: Incluye búsqueda aleatoria automatizada para optimizar parámetros de LoRA y pesos de recompensa
 - **Normalización inteligente**: Normaliza todas las métricas a rangos comparables para evitar dominancia de escalas
 - **Early stopping**: Previene sobreajuste deteniendo el entrenamiento cuando no hay mejoras
 - **Generación de imágenes de prueba**: Produce muestras visuales para evaluación cualitativa
@@ -42,15 +41,7 @@ Archivo de configuración que define todas las dependencias necesarias para el p
   - OpenCLIP para modelos CLIP
   - Jupyter Notebook para ejecución interactiva
 
-#### 3. **training_prompts_expanded.txt** - Prompts de Entrenamiento
-- **Formato**: Un prompt por línea
-- **Contenido**: Descripciones textuales para generar imágenes durante el entrenamiento
-- **Uso**: Alimenta el modelo durante la fase de optimización RL
 
-#### 4. **validation_prompts_400.txt** - Prompts de Validación
-- **Formato**: Un prompt por línea
-- **Contenido**: Descripciones textuales independientes para validación
-- **Uso**: Evalúa el modelo en datos no vistos durante el entrenamiento
 
 ## Requisitos y Configuración del Ambiente
 
@@ -66,9 +57,3 @@ Archivo de configuración que define todas las dependencias necesarias para el p
 
 El archivo `environment.yml` contiene todas las dependencias necesarias. Para crear el ambiente:
 
-```bash
-# Crear el ambiente Conda desde el archivo YAML
-conda env create -f environment.yml
-
-# Activar el ambiente
-conda activate rl-unclip-env
